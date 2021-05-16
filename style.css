@@ -121,4 +121,16 @@ transition: 1s ease-out;
 img:hover{
   opacity: 0.5;
 }
+/* Media mobile */
+@media  (max-width:768px) {
+  h1{
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+  }
+  i{
+    font-size: 30px;
+  }
+
+}
+
 
