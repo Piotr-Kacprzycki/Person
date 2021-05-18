@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Shadows Into Light', cursive;
-
+  font-family: "Shadows Into Light", cursive;
 }
 body {
   background-color: black;
@@ -16,10 +15,7 @@ body {
   height: 100vh;
   padding: 5px;
   border: 8px solid rgba(245, 245, 245, 0.911);
-
 }
-
-
 
 h1 {
   text-align: center;
@@ -27,7 +23,6 @@ h1 {
   font-size: 2rem;
   opacity: 0.8;
   text-shadow: 0 3px 10px rgba(0, 162, 255, 0.993);
-
 }
 h1:hover {
   opacity: 0.9;
@@ -41,13 +36,16 @@ span {
   font-size: 3rem;
   display: inline-block;
   transform: translateY(15px) rotate(20deg);
-  animation: flash 1s linear infinite;
+  animation: flash 1.4s linear infinite;
 }
 @keyframes flash {
   0% {
     opacity: 0.2;
   }
-  5%{opacity: 1; color: white;}
+  5% {
+    opacity: 1;
+    color: white;
+  }
   15% {
     opacity: 0;
   }
@@ -66,7 +64,9 @@ span {
   90% {
     opacity: 0.7;
   }
-  100%{opacity: 0;}
+  100% {
+    opacity: 0;
+  }
 }
 /* media contact */
 
@@ -80,7 +80,7 @@ span {
 i {
   font-size: 50px;
   margin: 25px;
- color:rgba(0, 162, 255, 0.993);
+  color: rgba(0, 162, 255, 0.993);
   opacity: 0.7;
   transition: 0.3s linear;
 }
@@ -96,7 +96,7 @@ i::after {
   content: "";
   border: 2px solid red;
   display: block;
- margin-top: 2px;
+  margin-top: 2px;
   opacity: 0;
   transition: 0.4s;
 }
@@ -115,22 +115,21 @@ img {
   opacity: 0.7;
   display: block;
   margin-top: 60px;
-transition: 1s ease-out;
+  transition: 1s linear;
+  border-radius: 7px;
+  
 }
 
-img:hover{
-  opacity: 0.5;
+.shadow {
+  box-shadow: 5px 15px 20px ;
 }
 /* Media mobile */
-@media  (max-width:768px) {
-  h1{
+@media (max-width: 768px) {
+  h1 {
     letter-spacing: 0.2rem;
     font-size: 1rem;
   }
-  i{
+  i {
     font-size: 30px;
   }
-
 }
-
-
