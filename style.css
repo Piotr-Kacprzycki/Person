@@ -21,11 +21,8 @@ h1 {
   text-align: center;
   letter-spacing: 0.7rem;
   font-size: 2rem;
-  opacity: 0.8;
-  text-shadow: 0 3px 10px rgba(0, 162, 255, 0.993);
-}
-h1:hover {
   opacity: 0.9;
+  text-shadow: 0 3px 10px rgba(0, 162, 255, 0.993);
 }
 
 span {
@@ -111,17 +108,17 @@ i:hover::after {
   display: flex;
   justify-content: center;
 }
+
 img {
-  opacity: 0.7;
+  opacity: 0.9;
   display: block;
   margin-top: 60px;
-  transition: 1s linear;
+  transition: 1.2s linear;
   border-radius: 7px;
-  
 }
 
 .shadow {
-  box-shadow: 5px 15px 20px ;
+  box-shadow: 5px 15px 20px;
 }
 /* Media mobile */
 @media (max-width: 768px) {
@@ -132,4 +129,23 @@ img {
   i {
     font-size: 30px;
   }
+  .footerDescription{
+    font-size: 0.2rem;
+    text-align: center;
+    
+  }
+}
+
+/* footer section */
+
+footer {
+  position: absolute;
+  top: 95vh;
+
+}
+
+.footerDescription {
+  letter-spacing: 0.1rem;
+  opacity: 0.7;
+  font-size: 0.8rem;
 }

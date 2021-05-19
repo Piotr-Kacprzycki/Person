@@ -1,52 +1,29 @@
+const logoJs = document.querySelector("#logoJs");
+const body = document.querySelector("body");
 
-const logoJs = document.querySelector('#logoJs');
-const body = document.querySelector('body');
-const colors = ['red','blue','green','white','yellow','orange'];
+const colors = [
+  "red",
+  "blue",
+  "green",
+  "white",
+  "yellow",
+  "orange",
+  "grey",
+  "pink",
+  "brown",
+  "olive",
+  "teal",
+];
 
- let shadowNumber = Math.floor(Math.random()* colors.length)
-body.addEventListener('mousemove',()=>{
+body.addEventListener("mousemove", () => {
+  for (let i = 0; i <= colors.length; i++) {
+    let number = 0;
+    setInterval(() => {
+      let shadowNumber = Math.floor(Math.random() * colors.length);
 
-let number = 0;
+      number += shadowNumber;
 
-
-
-setInterval(() => {
-    if(number >= 0){
-
-
-
-
-    
-number += shadowNumber
-
-    logoJs.style.boxShadow = `10px 20px 20px ${colors[number++]}`
-
-    }else if( number.length <=  5){
-
-        number += shadowNumber
-
-        logoJs.style.boxShadow = `10px 20px 20px ${colors[number--]}`
-
-
-
-        
-    }
-    
-
-
-
-
-
-
-}, 1000);
-console.log('działa')
-
-
-
-
-
-})
-
-
-
-
+      logoJs.style.boxShadow = `10px 20px 20px ${colors[number++]}`;
+    }, 1200);
+  }
+});
